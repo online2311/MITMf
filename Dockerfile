@@ -7,7 +7,6 @@ RUN git clone https://github.com/online2311/MITMf /MITMf
 WORKDIR /MITMf
 RUN git submodule init && git submodule update --recursive
 RUN pip install -r requirements.txt
-RUN sysctl -w net.ipv4.ip_forward=1
 VOLUME /MITMf/logs/
 
 EXPOSE 10000
