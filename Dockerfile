@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 VOLUME /MITMf/logs/
 
 EXPOSE 10000
-ENTRYPOINT ["python", "/MITMf/mitmf.py", "-i", "eth0", "--inject", "--html-url", "http://freewlan.com.cn", "--per-domain"]
+ENTRYPOINT ["python", "/MITMf/mitmf.py", "-i", "eth0", "--inject", "--js-file", "/MITMf/adjs.conf", "--per-domain"]
