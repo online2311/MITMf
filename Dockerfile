@@ -1,5 +1,5 @@
 FROM ubuntu:wily
-MAINTAINER ZhangJing <13821320100@outlook.com>
+MAINTAINER ZhangJing 
 
 RUN apt-get update
 RUN apt-get install -y net-tools iptables tcpdump git file python-pip python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev libxml2-dev libxslt1-dev libcapstone3 libcapstone-dev
